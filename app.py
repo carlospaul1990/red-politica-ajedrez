@@ -50,10 +50,16 @@ if not os.path.exists(ARCHIVO_DB):
 with open(ARCHIVO_DB, "r", encoding="utf-8") as f:
     db = json.load(f)
 
-# Reducir márgenes superiores de Streamlit en móvil y escritorio
+# Ajustar márgenes superiores para que el título y el botón Salir no queden tapados por la barra de Streamlit
 st.markdown("""
     <style>
-    .block-container { padding-top: 1rem !important; padding-bottom: 0.5rem !important; padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
+    header[data-testid="stHeader"] { background: transparent; }
+    .block-container {
+        padding-top: 3.2rem !important;
+        padding-bottom: 0.5rem !important;
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -244,7 +250,6 @@ html_app = f"""<!DOCTYPE html>
     const viewport = document.getElementById('viewport');
     const isMobile = window.innerWidth <= 768;
 
-    // Lienzo lógico uniforme de 800x800 para que nunca quede cortado en pantallas estrechas
     const baseSize = 800;
     const cx = baseSize / 2;
     const cy = baseSize / 2;
@@ -268,7 +273,6 @@ html_app = f"""<!DOCTYPE html>
       viewport.setAttribute('transform', `translate(${{panX}}, ${{panY}}) scale(${{scale}})`);
     }}
 
-    // Zoom con rueda del ratón
     svg.addEventListener('wheel', (e) => {{
       e.preventDefault();
       const rect = svg.getBoundingClientRect();
@@ -282,7 +286,6 @@ html_app = f"""<!DOCTYPE html>
       updateTransform();
     }}, {{ passive: false }});
 
-    // Botones de Zoom
     document.getElementById('zoomIn').onclick = () => {{
       const rect = svg.getBoundingClientRect();
       const mx = rect.width / 2, my = rect.height / 2;
@@ -303,7 +306,6 @@ html_app = f"""<!DOCTYPE html>
     }};
     document.getElementById('zoomReset').onclick = fitToScreen;
 
-    // Eventos de Mouse (PC)
     svg.addEventListener('mousedown', (e) => {{
       if (draggedNode) return;
       isPanning = true;
@@ -330,7 +332,6 @@ html_app = f"""<!DOCTYPE html>
       draggedNode = null;
     }});
 
-    // Eventos Táctiles (Celular / Tablet: 1 dedo mover, 2 dedos pellizcar zoom)
     svg.addEventListener('touchstart', (e) => {{
       if (e.touches.length === 2) {{
         isPanning = false;
