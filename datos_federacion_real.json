@@ -1,0 +1,2094 @@
+{
+  "jugadores": [
+    {
+      "id": 1,
+      "fide_id": "PROYECTO-01",
+      "nombre": "Proyecto Kendry Morón",
+      "aliasCupula": "Proyecto",
+      "provincia": "Nacional",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 0,
+      "esProyecto": true,
+      "esCupula": false,
+      "cargo": "Nodo Raíz del Proyecto",
+      "status": "Activo"
+    },
+    {
+      "id": 2,
+      "fide_id": "EXT-KENDRY",
+      "nombre": "Kendry Morón",
+      "aliasCupula": "Kendry",
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 1,
+      "esProyecto": false,
+      "esCupula": true,
+      "cargo": "Cúpula (Kendry)",
+      "status": "A Favor"
+    },
+    {
+      "id": 3,
+      "fide_id": "EXT-FELIX",
+      "nombre": "Félix Almánzar",
+      "aliasCupula": "Felix Almanzar",
+      "provincia": "Moca",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 1,
+      "esProyecto": false,
+      "esCupula": true,
+      "cargo": "Cúpula (Felix Almanzar)",
+      "status": "A Favor"
+    },
+    {
+      "id": 4,
+      "fide_id": "6409911",
+      "nombre": "Alcantara Urbaez, Richard Leandro",
+      "aliasCupula": null,
+      "provincia": "Barahona",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 5,
+      "fide_id": "6403263",
+      "nombre": "Duran Moya, Joel Aneudy",
+      "aliasCupula": null,
+      "provincia": "Cotui",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 6,
+      "fide_id": "6426077",
+      "nombre": "Martinez Jimenez, Manyeli",
+      "aliasCupula": null,
+      "provincia": "Cotui",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 7,
+      "fide_id": "6405525",
+      "nombre": "Abreu Jean, Carlos Paul",
+      "aliasCupula": "Carlos Paul",
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 1,
+      "esProyecto": false,
+      "esCupula": true,
+      "cargo": "Cúpula (Carlos Paul)",
+      "status": "a Favor"
+    },
+    {
+      "id": 8,
+      "fide_id": "6419690",
+      "nombre": "Mendez Ramirez, Victor",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "a Favor"
+    },
+    {
+      "id": 9,
+      "fide_id": "6415253",
+      "nombre": "Jimenez Jimenez, Leandro",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "a Favor"
+    },
+    {
+      "id": 10,
+      "fide_id": "6402771",
+      "nombre": "Crispin Ferreras, Darvi Abraham",
+      "aliasCupula": "Crispin",
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 1,
+      "esProyecto": false,
+      "esCupula": true,
+      "cargo": "Cúpula (Crispin)",
+      "status": "a Favor"
+    },
+    {
+      "id": 11,
+      "fide_id": "6403743",
+      "nombre": "De Jesus Rosa, Michel",
+      "aliasCupula": "Michel",
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 1,
+      "esProyecto": false,
+      "esCupula": true,
+      "cargo": "Cúpula (Michel)",
+      "status": "A Favor"
+    },
+    {
+      "id": 12,
+      "fide_id": "6431470",
+      "nombre": "Regalado Nicasio, Jean Franco",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 13,
+      "fide_id": "6419712",
+      "nombre": "Rodriguez Mejia, Eddy Gabriel",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 14,
+      "fide_id": "6401104",
+      "nombre": "Peralta Moore, Juan Antonio",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 15,
+      "fide_id": "6410685",
+      "nombre": "Tiburcio Villar, Franklin Jonel",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 16,
+      "fide_id": "6408915",
+      "nombre": "Ortiz, Junior Renato",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 17,
+      "fide_id": "6414320",
+      "nombre": "Cepeda De Jesus, Renny Saul",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 18,
+      "fide_id": "6406629",
+      "nombre": "Gomez Almanzar, Roberto Antonio",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 19,
+      "fide_id": "6421482",
+      "nombre": "Gonzalez Peguero, Mary Loly",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 20,
+      "fide_id": "6406874",
+      "nombre": "Nova Ramirez, Presley Eury",
+      "aliasCupula": "Presley",
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 1,
+      "esProyecto": false,
+      "esCupula": true,
+      "cargo": "Cúpula (Presley)",
+      "status": "A Favor"
+    },
+    {
+      "id": 21,
+      "fide_id": "6402852",
+      "nombre": "Guevara Orbe, Franklin",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 22,
+      "fide_id": "6416560",
+      "nombre": "Feliz Custodio, Miguel Angel",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 23,
+      "fide_id": "6433910",
+      "nombre": "Florian Vasquez, Gabriel Emilio",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 24,
+      "fide_id": "6407455",
+      "nombre": "Almonte Almanzar, Jose Amado",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 25,
+      "fide_id": "6405789",
+      "nombre": "Vargas Luciano, Juan Francisco",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 26,
+      "fide_id": "6433847",
+      "nombre": "Garcia Chan, Pablo",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 27,
+      "fide_id": "6401368",
+      "nombre": "Pimentel Francisco, Rosaura",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 28,
+      "fide_id": "6426522",
+      "nombre": "Giraldo Cortes, Cristobal",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 29,
+      "fide_id": "6421792",
+      "nombre": "Ramirez Luzon, Franchesca",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 30,
+      "fide_id": "6405606",
+      "nombre": "Guerrero Samboy, Juanito",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 31,
+      "fide_id": "6401830",
+      "nombre": "Cruz Nina, Engels David",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 32,
+      "fide_id": "6410243",
+      "nombre": "Nieto Rodriguez, Alejandro",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "Retirado"
+    },
+    {
+      "id": 33,
+      "fide_id": "6437729",
+      "nombre": "Morel Reyes, Fraimy Alexander",
+      "aliasCupula": null,
+      "provincia": "SDO",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "Pendiente"
+    },
+    {
+      "id": 34,
+      "fide_id": "6430910",
+      "nombre": "Lara Santos, Angel Sebastian",
+      "aliasCupula": null,
+      "provincia": "SDE",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "Pendiente"
+    },
+    {
+      "id": 35,
+      "fide_id": "6425240",
+      "nombre": "Polanco Fernandez, Sahiean",
+      "aliasCupula": null,
+      "provincia": "Santiago",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "Pendiente"
+    },
+    {
+      "id": 36,
+      "fide_id": "6432263",
+      "nombre": "Munoz Feliz, Alejandro",
+      "aliasCupula": null,
+      "provincia": "SDE",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "Pendiente"
+    },
+    {
+      "id": 37,
+      "fide_id": "6426484",
+      "nombre": "Blanc Bakirdjian, Brielle Alicia",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 38,
+      "fide_id": "6409946",
+      "nombre": "Eusebio Perez, Hector Eduardo",
+      "aliasCupula": null,
+      "provincia": "Hato Mayor",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 39,
+      "fide_id": "6401600",
+      "nombre": "Martinez Castillo, Julio Antonio",
+      "aliasCupula": null,
+      "provincia": "Hato Mayor",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 40,
+      "fide_id": "6409113",
+      "nombre": "Zorrilla Jimenez, Wilber Edwin",
+      "aliasCupula": null,
+      "provincia": "Hato Mayor",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 41,
+      "fide_id": "6409296",
+      "nombre": "Pena Perez, Luis Eduardo",
+      "aliasCupula": null,
+      "provincia": "Higuey",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 42,
+      "fide_id": "6409369",
+      "nombre": "Valoy Castillo, Porfirio",
+      "aliasCupula": null,
+      "provincia": "Higuey",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 43,
+      "fide_id": "6400663",
+      "nombre": "Fabian Brioso, Carlos Julio",
+      "aliasCupula": null,
+      "provincia": "Higuey",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 44,
+      "fide_id": "6402720",
+      "nombre": "Arvelo Leo, Gian Carlo",
+      "aliasCupula": "Gian Carlos",
+      "provincia": "La Romana",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 1,
+      "esProyecto": false,
+      "esCupula": true,
+      "cargo": "Cúpula (Gian Carlos)",
+      "status": "A Favor"
+    },
+    {
+      "id": 45,
+      "fide_id": "6419461",
+      "nombre": "King Rodriguez, Os Misael",
+      "aliasCupula": null,
+      "provincia": "La Romana",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 46,
+      "fide_id": "6405061",
+      "nombre": "Caraballo Del Rosario, Abraham Ernesto",
+      "aliasCupula": null,
+      "provincia": "La Romana",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 47,
+      "fide_id": "6406173",
+      "nombre": "Del Rosario Batista, Nobel Oscar",
+      "aliasCupula": "Nobel",
+      "provincia": "La Romana",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 1,
+      "esProyecto": false,
+      "esCupula": true,
+      "cargo": "Cúpula (Nobel)",
+      "status": "A Favor"
+    },
+    {
+      "id": 48,
+      "fide_id": "6428738",
+      "nombre": "Diaz Diaz, Federico",
+      "aliasCupula": null,
+      "provincia": "La Romana",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 49,
+      "fide_id": "6408885",
+      "nombre": "Camacho Campusano, David Daniel",
+      "aliasCupula": null,
+      "provincia": "Moca",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 50,
+      "fide_id": "6410634",
+      "nombre": "Reyes Capellan, Elby",
+      "aliasCupula": null,
+      "provincia": "Moca",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 51,
+      "fide_id": "6406181",
+      "nombre": "Escano Dionicio, Porfirio Simeon",
+      "aliasCupula": null,
+      "provincia": "Moca",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 52,
+      "fide_id": "6413030",
+      "nombre": "Torres Castro, Diomedes Cristino",
+      "aliasCupula": null,
+      "provincia": "Moca",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 53,
+      "fide_id": "6410146",
+      "nombre": "Ramos Burgos, Gregory Joel",
+      "aliasCupula": null,
+      "provincia": "Moca",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 54,
+      "fide_id": "6406505",
+      "nombre": "Almanzar Vasquez, Jeniffer Maria",
+      "aliasCupula": null,
+      "provincia": "Moca",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 55,
+      "fide_id": "6411452",
+      "nombre": "Sanchez Acevedo, Jensy Manuel",
+      "aliasCupula": null,
+      "provincia": "Moca",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "fuera del pais"
+    },
+    {
+      "id": 56,
+      "fide_id": "6408095",
+      "nombre": "Joaquin Salcedo, Candida",
+      "aliasCupula": null,
+      "provincia": "Moca",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 57,
+      "fide_id": "6416292",
+      "nombre": "Cabreja Lora, Suzette",
+      "aliasCupula": null,
+      "provincia": "Monte Cristi",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 58,
+      "fide_id": "6410456",
+      "nombre": "Diaz Valdez, Eugenio Daniel",
+      "aliasCupula": null,
+      "provincia": "Nagua",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 59,
+      "fide_id": "6406548",
+      "nombre": "Hilario de la Cruz, Juan Fabriel",
+      "aliasCupula": null,
+      "provincia": "Nagua",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 60,
+      "fide_id": "6404057",
+      "nombre": "Segura Encarnacion, Ronald Eliesel",
+      "aliasCupula": null,
+      "provincia": "Neyba",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 61,
+      "fide_id": "6403689",
+      "nombre": "Vasquez Sanchez, Antonio",
+      "aliasCupula": null,
+      "provincia": "Neyba",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 62,
+      "fide_id": "6405215",
+      "nombre": "Sosa Moran, Anthony Marc",
+      "aliasCupula": null,
+      "provincia": "Puerto Plata",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 63,
+      "fide_id": "6412807",
+      "nombre": "Sosa Moran, Bryan Marc",
+      "aliasCupula": null,
+      "provincia": "Puerto Plata",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 64,
+      "fide_id": "6409539",
+      "nombre": "Washington Martinez, Avalon Alfonso",
+      "aliasCupula": null,
+      "provincia": "Puerto Plata",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 65,
+      "fide_id": "6401147",
+      "nombre": "Rodriguez Cabral, Antmel",
+      "aliasCupula": null,
+      "provincia": "San Cristobal",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 66,
+      "fide_id": "6427618",
+      "nombre": "Sanchez Jaspez, Rosangel",
+      "aliasCupula": null,
+      "provincia": "San Cristobal",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 67,
+      "fide_id": "6402763",
+      "nombre": "Coronado Paulino, Karen Libell",
+      "aliasCupula": null,
+      "provincia": "San Francisco",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 68,
+      "fide_id": "6401317",
+      "nombre": "Michelen Rodriguez, Victor Isaac",
+      "aliasCupula": "Michelen",
+      "provincia": "San Juan",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 1,
+      "esProyecto": false,
+      "esCupula": true,
+      "cargo": "Cúpula (Michelen)",
+      "status": "A Favor"
+    },
+    {
+      "id": 69,
+      "fide_id": "6423604",
+      "nombre": "Montero Montero, Alexandro",
+      "aliasCupula": null,
+      "provincia": "San Juan",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 70,
+      "fide_id": "6406122",
+      "nombre": "Adames Ramirez, Carlos",
+      "aliasCupula": null,
+      "provincia": "San Juan",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 71,
+      "fide_id": "6402674",
+      "nombre": "Viola Herrera, Victor Manuel",
+      "aliasCupula": null,
+      "provincia": "San Juan",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 72,
+      "fide_id": "6401430",
+      "nombre": "Cordero Mateo, Sigfrido Alejandro",
+      "aliasCupula": null,
+      "provincia": "San Juan",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 73,
+      "fide_id": "6410430",
+      "nombre": "De La Rosa Rodriguez, Isaias",
+      "aliasCupula": null,
+      "provincia": "San Juan",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 74,
+      "fide_id": "6416896",
+      "nombre": "Araujo Sanchez, Josue",
+      "aliasCupula": null,
+      "provincia": "SDE",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "a Favor"
+    },
+    {
+      "id": 75,
+      "fide_id": "6404022",
+      "nombre": "Lugo Matos, Richards Reynier",
+      "aliasCupula": null,
+      "provincia": "SDE",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 76,
+      "fide_id": "6403085",
+      "nombre": "Hernandez Terrero, Daniel Alberto",
+      "aliasCupula": null,
+      "provincia": "SDE",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 77,
+      "fide_id": "6423094",
+      "nombre": "Ventura Rosario, Julio Esdeulin",
+      "aliasCupula": "Julio",
+      "provincia": "SDE",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 1,
+      "esProyecto": false,
+      "esCupula": true,
+      "cargo": "Cúpula (Julio)",
+      "status": "A Favor"
+    },
+    {
+      "id": 78,
+      "fide_id": "6403735",
+      "nombre": "Castillo Vasquez, Adgart Miguel",
+      "aliasCupula": null,
+      "provincia": "SDE",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 79,
+      "fide_id": "6412106",
+      "nombre": "Castillo Pena, Patricia Evarista",
+      "aliasCupula": null,
+      "provincia": "SDE",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 80,
+      "fide_id": "6411126",
+      "nombre": "Jimenez Matos, Jimmy",
+      "aliasCupula": null,
+      "provincia": "SDE",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 81,
+      "fide_id": "6416780",
+      "nombre": "Novas Gomez, Mario De Jesus",
+      "aliasCupula": null,
+      "provincia": "SDE",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 82,
+      "fide_id": "6404090",
+      "nombre": "Canela Vasquez, Miguel William",
+      "aliasCupula": null,
+      "provincia": "SDN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 83,
+      "fide_id": "6423892",
+      "nombre": "Ogando Herrera, Wander",
+      "aliasCupula": null,
+      "provincia": "SDN",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 84,
+      "fide_id": "6423400",
+      "nombre": "Mesa Cruz, Juan Carlos",
+      "aliasCupula": null,
+      "provincia": "SDO",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "a Favor"
+    },
+    {
+      "id": 85,
+      "fide_id": "6403816",
+      "nombre": "Henriquez Trinidad, Benjamin",
+      "aliasCupula": "Benjamin",
+      "provincia": "SDO",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 1,
+      "esProyecto": false,
+      "esCupula": true,
+      "cargo": "Cúpula (Benjamin)",
+      "status": "A Favor"
+    },
+    {
+      "id": 86,
+      "fide_id": "6407552",
+      "nombre": "Arias Gil, Frankely Rafael",
+      "aliasCupula": null,
+      "provincia": "Moca",
+      "partidasFide": 97,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 87,
+      "fide_id": "6405070",
+      "nombre": "Castillo Marte, Antonio",
+      "aliasCupula": null,
+      "provincia": "Cotui",
+      "partidasFide": 96,
+      "partidasNac": 106,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 88,
+      "fide_id": "6410995",
+      "nombre": "Tiburcio, Franklin Eddy",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 93,
+      "partidasNac": 189,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 89,
+      "fide_id": "6411193",
+      "nombre": "Tiburcio Villar, Franky Samil",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 93,
+      "partidasNac": 84,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 90,
+      "fide_id": "6409423",
+      "nombre": "Roa, Pedro Gregorio",
+      "aliasCupula": null,
+      "provincia": "San Juan",
+      "partidasFide": 51,
+      "partidasNac": 377,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 91,
+      "fide_id": "6400906",
+      "nombre": "Amador Cedano, Benedicto Eurispides",
+      "aliasCupula": null,
+      "provincia": "DN",
+      "partidasFide": 59,
+      "partidasNac": 329,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 92,
+      "fide_id": "6407706",
+      "nombre": "Cuello Perez, Richar Orlando",
+      "aliasCupula": null,
+      "provincia": "San Juan",
+      "partidasFide": 82,
+      "partidasNac": 245,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 93,
+      "fide_id": "6417329",
+      "nombre": "Alcantara Matos, Digno Jose",
+      "aliasCupula": null,
+      "provincia": "San Juan",
+      "partidasFide": 54,
+      "partidasNac": 180,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 94,
+      "fide_id": "6409407",
+      "nombre": "Ramirez Paniagua, Luis Enrique",
+      "aliasCupula": null,
+      "provincia": "San Juan",
+      "partidasFide": 87,
+      "partidasNac": 138,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 95,
+      "fide_id": "6417353",
+      "nombre": "Bello Herrera, Darwin Smith",
+      "aliasCupula": null,
+      "provincia": "San Juan",
+      "partidasFide": 91,
+      "partidasNac": 99,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 96,
+      "fide_id": "6416047",
+      "nombre": "Jimenes, Luis Alberto",
+      "aliasCupula": null,
+      "provincia": "Monte Plata",
+      "partidasFide": 92,
+      "partidasNac": 96,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 97,
+      "fide_id": "6419470",
+      "nombre": "King Soriano, Misael",
+      "aliasCupula": null,
+      "provincia": "La Romana",
+      "partidasFide": 91,
+      "partidasNac": 90,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 98,
+      "fide_id": "6408648",
+      "nombre": "Lopez Mallen, Neudys Enmanuel",
+      "aliasCupula": null,
+      "provincia": "Colombia",
+      "partidasFide": 100,
+      "partidasNac": 0,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    },
+    {
+      "id": 99,
+      "fide_id": "6406890",
+      "nombre": "Perez, Luciano",
+      "aliasCupula": null,
+      "provincia": "Cotui",
+      "partidasFide": 31,
+      "partidasNac": 107,
+      "nivel": 2,
+      "esProyecto": false,
+      "esCupula": false,
+      "cargo": "Base / Votante",
+      "status": "A Favor"
+    }
+  ],
+  "relaciones": [
+    {
+      "de": 1,
+      "para": 85,
+      "tipo": "CUPULA_PROYECTO",
+      "peso": 10
+    },
+    {
+      "de": 1,
+      "para": 7,
+      "tipo": "CUPULA_PROYECTO",
+      "peso": 10
+    },
+    {
+      "de": 1,
+      "para": 10,
+      "tipo": "CUPULA_PROYECTO",
+      "peso": 10
+    },
+    {
+      "de": 1,
+      "para": 3,
+      "tipo": "CUPULA_PROYECTO",
+      "peso": 10
+    },
+    {
+      "de": 1,
+      "para": 44,
+      "tipo": "CUPULA_PROYECTO",
+      "peso": 10
+    },
+    {
+      "de": 1,
+      "para": 77,
+      "tipo": "CUPULA_PROYECTO",
+      "peso": 10
+    },
+    {
+      "de": 1,
+      "para": 2,
+      "tipo": "CUPULA_PROYECTO",
+      "peso": 10
+    },
+    {
+      "de": 1,
+      "para": 11,
+      "tipo": "CUPULA_PROYECTO",
+      "peso": 10
+    },
+    {
+      "de": 1,
+      "para": 68,
+      "tipo": "CUPULA_PROYECTO",
+      "peso": 10
+    },
+    {
+      "de": 1,
+      "para": 47,
+      "tipo": "CUPULA_PROYECTO",
+      "peso": 10
+    },
+    {
+      "de": 1,
+      "para": 20,
+      "tipo": "CUPULA_PROYECTO",
+      "peso": 10
+    },
+    {
+      "de": 77,
+      "para": 4,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 74,
+      "para": 4,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 85,
+      "para": 5,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 79,
+      "para": 5,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 85,
+      "para": 6,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 79,
+      "para": 6,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 85,
+      "para": 8,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 2,
+      "para": 9,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 10,
+      "para": 9,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 2,
+      "para": 10,
+      "tipo": "ENLACE_CUPULA",
+      "peso": 6
+    },
+    {
+      "de": 7,
+      "para": 12,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 13,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 2,
+      "para": 14,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 15,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 16,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 17,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 11,
+      "para": 18,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 2,
+      "para": 19,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 2,
+      "para": 21,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 10,
+      "para": 21,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 85,
+      "para": 22,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 7,
+      "para": 23,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 24,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 25,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 10,
+      "para": 26,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 7,
+      "para": 27,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 10,
+      "para": 28,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 29,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 30,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 31,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 2,
+      "para": 37,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 10,
+      "para": 37,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 20,
+      "para": 38,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 39,
+      "para": 38,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 20,
+      "para": 39,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 40,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 39,
+      "para": 40,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 20,
+      "para": 41,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 42,
+      "para": 41,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 20,
+      "para": 42,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 43,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 42,
+      "para": 43,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 47,
+      "para": 45,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 47,
+      "para": 46,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 47,
+      "para": 48,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 3,
+      "para": 49,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 3,
+      "para": 50,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 3,
+      "para": 51,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 3,
+      "para": 52,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 3,
+      "para": 53,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 3,
+      "para": 54,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 3,
+      "para": 55,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 3,
+      "para": 56,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 57,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 58,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 59,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 60,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 60,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 85,
+      "para": 61,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 60,
+      "para": 61,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 77,
+      "para": 62,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 74,
+      "para": 62,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 77,
+      "para": 63,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 74,
+      "para": 63,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 77,
+      "para": 64,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 74,
+      "para": 64,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 2,
+      "para": 65,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 11,
+      "para": 65,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 2,
+      "para": 66,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 11,
+      "para": 66,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 85,
+      "para": 67,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 68,
+      "tipo": "ENLACE_CUPULA",
+      "peso": 6
+    },
+    {
+      "de": 85,
+      "para": 68,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 68,
+      "para": 69,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 68,
+      "para": 70,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 68,
+      "para": 71,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 68,
+      "para": 72,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 68,
+      "para": 73,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 74,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 75,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 76,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 78,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 79,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 80,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 81,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 82,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 77,
+      "para": 83,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 77,
+      "para": 84,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 74,
+      "para": 84,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 3,
+      "para": 86,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 87,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 88,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 89,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 68,
+      "para": 90,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 91,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 25,
+      "para": 91,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 68,
+      "para": 92,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 68,
+      "para": 93,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 68,
+      "para": 94,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 68,
+      "para": 95,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 20,
+      "para": 96,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 85,
+      "para": 96,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 47,
+      "para": 97,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 77,
+      "para": 98,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    },
+    {
+      "de": 74,
+      "para": 98,
+      "tipo": "ENCARGADO_2",
+      "peso": 4
+    },
+    {
+      "de": 20,
+      "para": 99,
+      "tipo": "ENCARGADO_1",
+      "peso": 8
+    }
+  ]
+}
