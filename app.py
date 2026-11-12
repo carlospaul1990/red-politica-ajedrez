@@ -13,8 +13,6 @@ st.set_page_config(
 # ============================================================================
 # 1. CONTROL DE ACCESO CON CLAVE
 # ============================================================================
-# En Streamlit Cloud puedes configurar CLAVE_ACCESO en "Secrets".
-# Si no está en Secrets, usará la clave por defecto: "kendry2026"
 CLAVE_CORRECTA = st.secrets.get("CLAVE_ACCESO", "kendry2026")
 
 if "autenticado" not in st.session_state:
@@ -27,9 +25,9 @@ if not st.session_state.autenticado:
         </style>
     """, unsafe_allow_html=True)
     
-    col1, col2, col3 = st.columns([1, 1.2, 1])
+    col1, col2, col3 = st.columns([1, 1.4, 1])
     with col2:
-        st.markdown("<br><br><br>", unsafe_allow_html=True)
+        st.markdown("<br>", unsafe_allow_html=True)
         st.markdown("## ♟️ Proyecto Kendry Morón")
         st.caption("Acceso restringido — Estructura Electoral y Red de Influencia (≥100 partidas)")
         clave_ingresada = st.text_input("Introduce la clave de acceso:", type="password", placeholder="••••••••")
@@ -52,17 +50,23 @@ if not os.path.exists(ARCHIVO_DB):
 with open(ARCHIVO_DB, "r", encoding="utf-8") as f:
     db = json.load(f)
 
-# Barra superior compacta con botón de cerrar sesión
-top_c1, top_c2 = st.columns([6, 1])
+# Reducir márgenes superiores de Streamlit en móvil y escritorio
+st.markdown("""
+    <style>
+    .block-container { padding-top: 1rem !important; padding-bottom: 0.5rem !important; padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
+    </style>
+""", unsafe_allow_html=True)
+
+top_c1, top_c2 = st.columns([5, 1])
 with top_c1:
-    st.markdown("### ♟️ Red Política — Proyecto Kendry Morón (Padrón ≥ 100 Partidas)")
+    st.markdown("#### ♟️ Red Política — Proyecto Kendry Morón")
 with top_c2:
     if st.button("🔒 Salir", use_container_width=True):
         st.session_state.autenticado = False
         st.rerun()
 
 # ============================================================================
-# 3. VISOR INTERACTIVO EMBEBIDO (ZOOM, PAN, FILTROS Y FICHAS AL CLIC)
+# 3. VISOR INTERACTIVO RESPONSIVO (PC + MÓVIL TÁCTIL)
 # ============================================================================
 db_json_str = json.dumps(db, ensure_ascii=False)
 
@@ -70,21 +74,65 @@ html_app = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <style>
-    * {{ box-sizing: border-box; }}
-    body {{ font-family: system-ui, -apple-system, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; display: flex; height: 820px; overflow: hidden; border-radius: 10px; border: 1px solid #334155; }}
-    #sidebar {{ width: 350px; background: #1e293b; padding: 18px; border-right: 1px solid #334155; overflow-y: auto; z-index: 10; display: flex; flex-direction: column; gap: 10px; }}
-    #canvas-container {{ flex: 1; position: relative; background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%); }}
-    h3 {{ font-size: 0.9rem; margin: 4px 0; color: #cbd5e1; }}
-    select {{ width: 100%; padding: 8px; border-radius: 6px; background: #0f172a; color: #f8fafc; border: 1px solid #475569; font-size: 0.88rem; }}
-    .stat {{ background: #0f172a; padding: 8px 10px; border-radius: 6px; font-size: 0.83rem; border: 1px solid #334155; }}
-    .legend {{ display: flex; align-items: center; gap: 8px; margin: 4px 0; font-size: 0.8rem; }}
+    * {{ box-sizing: border-box; -webkit-tap-highlight-color: transparent; }}
+    body {{
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      margin: 0;
+      display: flex;
+      height: 820px;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1px solid #334155;
+    }}
+    #sidebar {{
+      width: 340px;
+      background: #1e293b;
+      padding: 16px;
+      border-right: 1px solid #334155;
+      overflow-y: auto;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }}
+    #canvas-container {{
+      flex: 1;
+      position: relative;
+      background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+      touch-action: none;
+    }}
+    h3 {{ font-size: 0.88rem; margin: 4px 0; color: #cbd5e1; }}
+    select {{
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      background: #0f172a;
+      color: #f8fafc;
+      border: 1px solid #475569;
+      font-size: 0.9rem;
+    }}
+    .stat {{ background: #0f172a; padding: 8px 10px; border-radius: 6px; font-size: 0.82rem; border: 1px solid #334155; }}
+    .legend {{ display: flex; align-items: center; gap: 8px; margin: 4px 0; font-size: 0.78rem; }}
     .dot {{ width: 11px; height: 11px; border-radius: 50%; display: inline-block; flex-shrink: 0; }}
-    svg {{ width: 100%; height: 100%; cursor: grab; display: block; }}
+    svg {{ width: 100%; height: 100%; cursor: grab; display: block; touch-action: none; }}
     svg:active {{ cursor: grabbing; }}
     text {{ fill: #e2e8f0; font-size: 10px; pointer-events: none; text-anchor: middle; user-select: none; }}
-    #zoom-controls {{ position: absolute; bottom: 18px; right: 18px; display: flex; gap: 8px; z-index: 20; }}
-    .btn-zoom {{ background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; padding: 7px 13px; font-size: 0.95rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }}
+    #zoom-controls {{ position: absolute; bottom: 14px; right: 14px; display: flex; gap: 6px; z-index: 20; }}
+    .btn-zoom {{
+      background: #1e293b;
+      color: #f8fafc;
+      border: 1px solid #475569;
+      border-radius: 6px;
+      padding: 8px 14px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    }}
     .btn-zoom:hover {{ background: #334155; border-color: #38bdf8; }}
 
     #info-card {{
@@ -95,17 +143,45 @@ html_app = f"""<!DOCTYPE html>
       box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }}
     #info-card .header {{ display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; border-bottom: 1px solid #334155; padding-bottom: 6px; margin-bottom: 8px; }}
-    #info-card .title {{ font-weight: bold; font-size: 0.95rem; color: #f8fafc; }}
-    #info-card .close-btn {{ background: none; border: none; color: #94a3b8; cursor: pointer; font-size: 1rem; padding: 0 4px; }}
-    .badge {{ display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.72rem; font-weight: bold; margin-bottom: 8px; }}
+    #info-card .title {{ font-weight: bold; font-size: 0.94rem; color: #f8fafc; }}
+    #info-card .close-btn {{ background: none; border: none; color: #94a3b8; cursor: pointer; font-size: 1.1rem; padding: 0 6px; }}
+    .badge {{ display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 0.72rem; font-weight: bold; margin-bottom: 8px; }}
     .badge-vota {{ background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981; }}
     .badge-rn {{ background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid #38bdf8; }}
     .badge-no {{ background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid #ef4444; }}
     .info-row {{ display: flex; justify-content: space-between; font-size: 0.8rem; padding: 3px 0; border-bottom: 1px dashed #1e293b; }}
     .info-label {{ color: #94a3b8; }}
     .info-val {{ font-weight: 600; color: #e2e8f0; text-align: right; }}
-    .rel-list {{ margin: 5px 0 0 0; padding-left: 16px; font-size: 0.78rem; color: #cbd5e1; max-height: 140px; overflow-y: auto; }}
-    .rel-list li {{ margin-bottom: 2px; }}
+    .rel-list {{ margin: 5px 0 0 0; padding-left: 16px; font-size: 0.78rem; color: #cbd5e1; max-height: 130px; overflow-y: auto; }}
+    .rel-list li {{ margin-bottom: 3px; }}
+
+    /* ADAPTACIÓN AUTOMÁTICA PARA CELULARES (pantallas <= 768px) */
+    @media (max-width: 768px) {{
+      body {{
+        flex-direction: column;
+        height: auto;
+        min-height: 920px;
+        overflow-y: auto;
+      }}
+      #canvas-container {{
+        order: 1;
+        width: 100%;
+        height: 460px;
+        flex: none;
+        border-bottom: 1px solid #334155;
+      }}
+      #sidebar {{
+        order: 2;
+        width: 100%;
+        border-right: none;
+        padding: 12px;
+        overflow-y: visible;
+      }}
+      .btn-zoom {{
+        padding: 10px 15px;
+        font-size: 1.05rem;
+      }}
+    }}
   </style>
 </head>
 <body>
@@ -119,7 +195,7 @@ html_app = f"""<!DOCTYPE html>
 
     <div id="info-card">
       <div style="font-size:0.82rem; color:#94a3b8; text-align:center; padding:6px 0;">
-        👆 Haz clic sobre cualquier nodo del mapa para ver su ficha completa, partidas y conexiones.
+        👆 Toca cualquier círculo en el mapa para ver su ficha completa, partidas y conexiones.
       </div>
     </div>
 
@@ -135,9 +211,9 @@ html_app = f"""<!DOCTYPE html>
     </div>
 
     <p style="font-size:0.75rem; color:#94a3b8; margin:2px 0 0 0; line-height:1.35;">
-      • <strong>Clic en nodo:</strong> Ver ficha y resaltar conexiones.<br>
-      • <strong>Rueda del ratón:</strong> Zoom.<br>
-      • <strong>Arrastrar fondo / nodo:</strong> Mover vista o nodo.
+      • <strong>Tocar / Clic en nodo:</strong> Ver ficha.<br>
+      • <strong>Pellizcar / Rueda:</strong> Zoom.<br>
+      • <strong>Arrastrar con 1 dedo:</strong> Mover mapa o nodo.
     </p>
   </div>
 
@@ -166,17 +242,33 @@ html_app = f"""<!DOCTYPE html>
 
     const svg = document.getElementById('grafo');
     const viewport = document.getElementById('viewport');
-    const width = svg.clientWidth || 980;
-    const height = svg.clientHeight || 780;
+    const isMobile = window.innerWidth <= 768;
+
+    // Lienzo lógico uniforme de 800x800 para que nunca quede cortado en pantallas estrechas
+    const baseSize = 800;
+    const cx = baseSize / 2;
+    const cy = baseSize / 2;
 
     let scale = 1, panX = 0, panY = 0;
     let isPanning = false, startPanX = 0, startPanY = 0;
     let draggedNode = null, dragMoved = false, selectedNodeId = null;
+    let initialPinchDist = null, initialPinchScale = 1;
+
+    function fitToScreen() {{
+      const rect = svg.getBoundingClientRect();
+      const w = rect.width || (isMobile ? 360 : 900);
+      const h = rect.height || (isMobile ? 460 : 780);
+      scale = Math.min(w / baseSize, h / baseSize) * 0.94;
+      panX = (w - baseSize * scale) / 2;
+      panY = (h - baseSize * scale) / 2;
+      updateTransform();
+    }}
 
     function updateTransform() {{
       viewport.setAttribute('transform', `translate(${{panX}}, ${{panY}}) scale(${{scale}})`);
     }}
 
+    // Zoom con rueda del ratón
     svg.addEventListener('wheel', (e) => {{
       e.preventDefault();
       const rect = svg.getBoundingClientRect();
@@ -190,10 +282,28 @@ html_app = f"""<!DOCTYPE html>
       updateTransform();
     }}, {{ passive: false }});
 
-    document.getElementById('zoomIn').onclick = () => {{ scale = Math.min(scale * 1.25, 5); updateTransform(); }};
-    document.getElementById('zoomOut').onclick = () => {{ scale = Math.max(scale * 0.8, 0.25); updateTransform(); }};
-    document.getElementById('zoomReset').onclick = () => {{ scale = 1; panX = 0; panY = 0; updateTransform(); }};
+    // Botones de Zoom
+    document.getElementById('zoomIn').onclick = () => {{
+      const rect = svg.getBoundingClientRect();
+      const mx = rect.width / 2, my = rect.height / 2;
+      const newScale = Math.min(scale * 1.25, 5);
+      panX = mx - (mx - panX) * (newScale / scale);
+      panY = my - (my - panY) * (newScale / scale);
+      scale = newScale;
+      updateTransform();
+    }};
+    document.getElementById('zoomOut').onclick = () => {{
+      const rect = svg.getBoundingClientRect();
+      const mx = rect.width / 2, my = rect.height / 2;
+      const newScale = Math.max(scale * 0.8, 0.25);
+      panX = mx - (mx - panX) * (newScale / scale);
+      panY = my - (my - panY) * (newScale / scale);
+      scale = newScale;
+      updateTransform();
+    }};
+    document.getElementById('zoomReset').onclick = fitToScreen;
 
+    // Eventos de Mouse (PC)
     svg.addEventListener('mousedown', (e) => {{
       if (draggedNode) return;
       isPanning = true;
@@ -220,9 +330,68 @@ html_app = f"""<!DOCTYPE html>
       draggedNode = null;
     }});
 
+    // Eventos Táctiles (Celular / Tablet: 1 dedo mover, 2 dedos pellizcar zoom)
+    svg.addEventListener('touchstart', (e) => {{
+      if (e.touches.length === 2) {{
+        isPanning = false;
+        draggedNode = null;
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        initialPinchDist = Math.hypot(dx, dy);
+        initialPinchScale = scale;
+      }} else if (e.touches.length === 1 && !draggedNode) {{
+        isPanning = true;
+        startPanX = e.touches[0].clientX - panX;
+        startPanY = e.touches[0].clientY - panY;
+      }}
+    }}, {{ passive: false }});
+
+    svg.addEventListener('touchmove', (e) => {{
+      e.preventDefault();
+      if (e.touches.length === 2 && initialPinchDist) {{
+        const rect = svg.getBoundingClientRect();
+        const midX = (e.touches[0].clientX + e.touches[1].clientX) / 2 - rect.left;
+        const midY = (e.touches[0].clientY + e.touches[1].clientY) / 2 - rect.top;
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const dist = Math.hypot(dx, dy);
+        const newScale = Math.min(Math.max(0.25, initialPinchScale * (dist / initialPinchDist)), 5);
+        panX = midX - (midX - panX) * (newScale / scale);
+        panY = midY - (midY - panY) * (newScale / scale);
+        scale = newScale;
+        updateTransform();
+      }} else if (e.touches.length === 1) {{
+        if (draggedNode) {{
+          dragMoved = true;
+          const rect = svg.getBoundingClientRect();
+          draggedNode.x = (e.touches[0].clientX - rect.left - panX) / scale;
+          draggedNode.y = (e.touches[0].clientY - rect.top - panY) / scale;
+          render();
+        }} else if (isPanning) {{
+          panX = e.touches[0].clientX - startPanX;
+          panY = e.touches[0].clientY - startPanY;
+          updateTransform();
+        }}
+      }}
+    }}, {{ passive: false }});
+
+    svg.addEventListener('touchend', (e) => {{
+      if (draggedNode && !dragMoved) {{
+        selectedNodeId = draggedNode.id;
+        mostrarFicha(draggedNode);
+        render();
+        if (isMobile) infoCard.scrollIntoView({{ behavior: 'smooth', block: 'nearest' }});
+      }}
+      if (e.touches.length < 2) initialPinchDist = null;
+      if (e.touches.length === 0) {{
+        isPanning = false;
+        draggedNode = null;
+      }}
+    }});
+
     function mostrarFicha(n) {{
       if (!n) {{
-        infoCard.innerHTML = `<div style="font-size:0.82rem; color:#94a3b8; text-align:center; padding:6px 0;">👆 Haz clic sobre cualquier nodo del mapa para ver su ficha completa, partidas y conexiones.</div>`;
+        infoCard.innerHTML = `<div style="font-size:0.82rem; color:#94a3b8; text-align:center; padding:6px 0;">👆 Toca cualquier círculo en el mapa para ver su ficha completa, partidas y conexiones.</div>`;
         return;
       }}
 
@@ -282,16 +451,16 @@ html_app = f"""<!DOCTYPE html>
     const baseList = jugadores.filter(j => j.nivel === 2);
 
     const nodes = jugadores.map(j => {{
-      if (j.nivel === 0) return {{ ...j, x: width / 2, y: height / 2 }};
+      if (j.nivel === 0) return {{ ...j, x: cx, y: cy }};
       if (j.nivel === 1) {{
         const idx = cupulaList.findIndex(c => c.id === j.id);
         const angle = (idx / cupulaList.length) * 2 * Math.PI - Math.PI / 2;
-        return {{ ...j, x: width / 2 + 165 * Math.cos(angle), y: height / 2 + 165 * Math.sin(angle) }};
+        return {{ ...j, x: cx + 165 * Math.cos(angle), y: cy + 165 * Math.sin(angle) }};
       }}
       const idx = baseList.findIndex(b => b.id === j.id);
       const angle = (idx / baseList.length) * 2 * Math.PI;
       const r = 310 + (idx % 2) * 40;
-      return {{ ...j, x: width / 2 + r * Math.cos(angle), y: height / 2 + r * Math.sin(angle) }};
+      return {{ ...j, x: cx + r * Math.cos(angle), y: cy + r * Math.sin(angle) }};
     }});
 
     function render() {{
@@ -347,7 +516,8 @@ html_app = f"""<!DOCTYPE html>
         else if (total >= 100) color = '#38bdf8';
 
         const isSelected = selectedNodeId === n.id;
-        const r = (n.esProyecto ? 28 : (n.esCupula ? 18 : 10)) + (isSelected ? 4 : 0);
+        const baseR = n.esProyecto ? 28 : (n.esCupula ? 18 : (isMobile ? 13 : 10));
+        const r = baseR + (isSelected ? 4 : 0);
 
         circle.setAttribute('cx', n.x);
         circle.setAttribute('cy', n.y);
@@ -368,6 +538,14 @@ html_app = f"""<!DOCTYPE html>
           draggedNode = n;
           dragMoved = false;
         }});
+
+        circle.addEventListener('touchstart', (e) => {{
+          if (e.touches.length === 1) {{
+            e.stopPropagation();
+            draggedNode = n;
+            dragMoved = false;
+          }}
+        }}, {{ passive: false }});
 
         circle.addEventListener('click', (e) => {{
           e.stopPropagation();
@@ -398,9 +576,12 @@ html_app = f"""<!DOCTYPE html>
       mostrarFicha(null);
       render();
     }};
+
+    window.addEventListener('resize', fitToScreen);
     render();
+    setTimeout(fitToScreen, 50);
   </script>
 </body>
 </html>"""
 
-components.html(html_app, height=830, scrolling=False)
+components.html(html_app, height=940, scrolling=True)
